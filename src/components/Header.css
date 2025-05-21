@@ -1,0 +1,36 @@
+nav {
+  background-color: #eeb807; /* Change the color as needed */
+  padding: 10px 20px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px; /* Space between items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Change text color as needed */
+  font-size: 16px; /* Adjust size as needed */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.header-title {
+  flex-grow: 0.5; /* Giving the title more space and centering it */
+  text-align:center;
+  text-shadow: #eeb807; 
+  background-color: #df9618;/* Centering title text */
+}
