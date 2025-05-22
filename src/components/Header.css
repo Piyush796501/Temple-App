@@ -58,7 +58,9 @@ nav ul {
   width: fit-content;
 }
 .submenu li {
+  display: block;
   padding: 0.5rem 1rem;
+
 }
 .submenu li:hover {
   background-color:#eeb807;
