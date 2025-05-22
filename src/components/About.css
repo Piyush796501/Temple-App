@@ -1,0 +1,36 @@
+.info-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.info-row {
+  display: flex;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-title {
+  flex: 0 0 180px;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-value {
+  flex: 1;
+  color: #444;
+}
+
+.tag {
+  background-color: #dc3545; /* red color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 4px;
+  cursor: default;
+  font-size: 14px;
+}
