@@ -34,3 +34,32 @@ nav ul li a:hover {
   text-shadow: #eeb807; 
   background-color: #df9618;/* Centering title text */
 }
+header {
+  overflow: visible;
+  position: relative;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(147, 30, 30);
+  color: black;
+  border: 1px solid red; /* TEMP: helps you visually debug */
+  z-index: 999;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+.submenu li {
+  padding: 0.5rem 1rem;
+}
+.submenu li:hover {
+  background-color:#eeb807;
+}

@@ -1,15 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+     const [aboutMenuOpen, setAboutMenuOpen] = useState(false);
+
+  const handleAboutClick = () => {
+    setAboutMenuOpen((open) => !open);
+  };
   return (
    <header>
     <div> <h4 className="header-title">Sidheswar Sivalay & Gopinath Aashram</h4></div>
             <nav>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li style={{ position: 'relative' }} onMouseLeave={() => setAboutMenuOpen(false)}>
+  <button
+    type="button"
+    onClick={handleAboutClick}
+    className="about-btn"
+  >
+    About
+  </button>
+
+  {aboutMenuOpen && (
+    <ul
+      className="submenu"
+      style={{
+        position: 'absolute',
+        left: 0,
+        top: '100%',
+        background: '#fff',
+        color:'black',
+        listStyle: 'none',
+        padding: '0.5em 1em',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+        zIndex: 999, // add this to ensure it appears on top
+      }}
+    >
+      <li>
+        <Link to="/about/mandir" onClick={() => setAboutMenuOpen(false)}>
+          Mandir
+        </Link>
+      </li>
+      <li>
+        <Link to="/about/aashram" onClick={() => setAboutMenuOpen(false)}>
+          Aashram
+        </Link>
+      </li>
+    </ul>
+  )}
+</li>
                     <li><Link to="/darshan">Darshan Times</Link></li>
                     <li><Link to="/donations">Donations</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
