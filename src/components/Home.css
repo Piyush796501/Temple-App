@@ -91,3 +91,14 @@ p{
   
   
 }
+.image-container {
+  display: flex;
+  justify-content: space-between; /* or center, or flex-start */
+  gap: 1rem; /* space between images */
+}
+
+.image-container img {
+  width: 48%; /* or any fixed size */
+  height: auto;
+  border-radius: 8px;
+}

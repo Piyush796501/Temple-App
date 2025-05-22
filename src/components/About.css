@@ -34,3 +34,39 @@
   cursor: default;
   font-size: 14px;
 }
+.reach-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #fcfcfc;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.reach-row {
+  display: flex;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.reach-title {
+  flex: 0 0 160px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reach-value {
+  flex: 1;
+  color: #444;
+}
+
+.reach-map-link {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.reach-map-link a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+}

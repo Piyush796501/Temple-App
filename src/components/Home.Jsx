@@ -10,8 +10,9 @@ function Home() {
       <div className="overlay" />
       
       <div className="home-content">
-        <div>
+        <div className="image-container">
       <img src={`${process.env.PUBLIC_URL}/temple.jpg`} alt="Temple"/>
+       <img src={`${process.env.PUBLIC_URL}/shivling.jpg`} alt="Temple"/>
     </div>
         <h1>Welcome to Shri Gopinath Ashram & Mandir</h1>
         <div className="home-buttons">
